@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Nail and Glow Bar</title>
+  <link rel="icon" type="images/x-icon" href="Logo001.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <a href="index.html">
+      <img src="logo.png" alt="Nail and Glow Bar Logo" class="logo"/>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-spa"></i> Services</a></li>
+        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Buttons -->
+    <div class="header-buttons">
+      <a href="booking.html" class="btn-outline">Book Now</a>
+      <button class="mobile-toggle" onclick="toggleMobileNav()"><i class="fas fa-bars"></i></button>
+    </div>
+
+     <!-- Profile Button -->
+      <a href="register.html" aria-label="Profile">
+        <button class="profile-btn">
+          <i class="fas fa-user"></i>
+        </button>
+      </a>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"><i class="fas fa-house"></i> Home</a>
+    <a href="services.html"><i class="fas fa-spa"></i> Services</a>
+    <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+  </div>
+
+  <!--yeaah-->
+<section class="contact-form-section">
+  <div class="container">
+    <div class="contact-content">
+      <div class="message-us">
+        <h2>Schedule Your Pampering Session!</h2>
+        <p>
+          Ready to indulge? Use our booking form to select your preferred service,
+          date, and time. We look forward to providing you with a luxurious
+          experience at Nail & Glow Bar.
+        </p>
+
+        <div class="additional-info">
+          <div>
+            <strong><i class="fas fa-info-circle"></i> Important Notes</strong><br />
+            Please book at least 24 hours in advance. For same-day appointments,
+            kindly call us directly.
+          </div>
+          <div>
+            <strong><i class="fas fa-phone"></i> Contact Us</strong><br />
+            Phone: 0945 985 0793<br />
+            Email: nailandglowbar@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+63 Mobile Number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="form-group">
+            <label>Select Services</label>
+            <div class="services-grid" id="serviceOptions">
+              <div class="service-item" data-value="carbon_laser" data-price="1500">Carbon Laser (₱1,500)</div>
+              <div class="service-item" data-value="diamond_peel" data-price="1200">Diamond Peel (₱1,200)</div>
+              <div class="service-item" data-value="diode" data-price="2000">Diode (₱2,000)</div>
+              <div class="service-item" data-value="ear_candling" data-price="500">Ear Candling (₱500)</div>
+              <div class="service-item" data-value="eyelash_extension" data-price="800">Eyelash Extension (₱800)</div>
+              <div class="service-item" data-value="facial_care" data-price="700">Facial Care (₱700)</div>
+              <div class="service-item" data-value="foot_spa" data-price="600">Foot Spa (₱600)</div>
+              <div class="service-item" data-value="nail_care" data-price="400">Nail Care (₱400)</div>
+              <div class="service-item" data-value="glutathione_drip" data-price="2500">Glutathione Drip (₱2,500)</div>
+              <div class="service-item" data-value="hair_rejuvenation" data-price="1800">Hair Rejuvenation (₱1,800)</div>
+              <div class="service-item" data-value="massage" data-price="900">Massage (₱900)</div>
+              <div class="service-item" data-value="mesolipo" data-price="3000">Mesolipo (₱3,000)</div>
+              <div class="service-item" data-value="microblading" data-price="3500">Microblading (₱3,500)</div>
+              <div class="service-item" data-value="microneedling" data-price="2800">Microneedling (₱2,800)</div>
+              <div class="service-item" data-value="microshadding" data-price="3200">Microshading (₱3,200)</div>
+              <div class="service-item" data-value="sweatox" data-price="4000">Sweatox (₱4,000)</div>
+              <div class="service-item" data-value="tattoo_removal" data-price="5000">Tattoo Removal (₱5,000)</div>
+              <div class="service-item" data-value="threading" data-price="300">Threading (₱300)</div>
+            </div>
+            <input type="hidden" name="selectedServices" id="selectedServices" />
+          </div>
+
+          <div class="form-group selected-services-summary">
+            <label>Your Selected Services</label>
+            <ul id="selectedServicesList">
+              </ul>
+            <div class="total-price">
+              <strong>Total: <span id="totalPrice">₱0.00</span></strong>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="preferredDate">Preferred Date</label>
+            <input type="date" id="preferredDate" name="preferredDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="preferredTime">Preferred Time</label>
+            <input type="time" id="preferredTime" name="preferredTime" required />
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes (Optional)</label>
+            <textarea id="notes" name="notes" placeholder="Any specific requests or concerns?" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="popup-overlay" id="thankYouPopup">
+  <div class="popup-content">
+    <h3>Thank You!</h3>
+    <p>Your appointment request has been submitted.<br>We’ll contact you shortly to confirm the details.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+   <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="logo.png" alt="Nail and Glow Bar Logo" class="footer-logo"/>
+          <p>Experience luxury nail care in a serene, floral-inspired environment. Book your appointment at Nail & Glow Bar today!</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-spa"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://web.facebook.com/NailandGlowBar"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/nailandglowbar?igsh=MTVpaXptbnp3ZmM2Yw=="><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Phone: 0945 985 0793</p>
+          <p>Email: nailandglowbar@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nail & Glow Bar. All rights reserved.</p>
+    </div>
+  </footer>
+
+ 
+  <!-- Mobile Navigation Script -->
+  <script>
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('show');
+    }
+
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector(".header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+ document.addEventListener('DOMContentLoaded', function() {
+    const serviceOptions = document.getElementById('serviceOptions');
+    const selectedServicesInput = document.getElementById('selectedServices');
+    const selectedServicesList = document.getElementById('selectedServicesList');
+    const totalPriceSpan = document.getElementById('totalPrice');
+    const bookingForm = document.querySelector('.contact-form');
+    const thankYouPopup = document.getElementById('thankYouPopup');
+
+    let totalBookingPrice = 0; 
+
+    
+    function updateBookingSummary() {
+      selectedServicesList.innerHTML = ''; 
+      totalBookingPrice = 0; 
+      let currentSelectedServiceValues = []; 
+
+    
+      document.querySelectorAll('.service-item.selected').forEach(item => {
+        const serviceText = item.textContent; 
+        const serviceValue = item.dataset.value; 
+        const servicePrice = parseFloat(item.dataset.price); 
+
+       
+        currentSelectedServiceValues.push(serviceValue);
+      
+        totalBookingPrice += servicePrice;
+
+     
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+          <span>${serviceText.split('(')[0].trim()}</span> 
+          <span>₱${servicePrice.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+        `;
+        selectedServicesList.appendChild(listItem);
+      });
+
+    
+      totalPriceSpan.textContent = `₱${totalBookingPrice.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+ 
+      selectedServicesInput.value = currentSelectedServiceValues.join(',');
+    }
+
+
+    serviceOptions.addEventListener('click', function(event) {
+     
+      const clickedItem = event.target.closest('.service-item');
+
+      if (clickedItem) {
+        clickedItem.classList.toggle('selected');
+        updateBookingSummary();
+      }
+    });
+
+
+    bookingForm.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      
+      if (totalBookingPrice === 0) {
+        alert('Please select at least one service before confirming your booking.');
+        return; 
+      }
+
+ 
+      thankYouPopup.style.display = 'flex';
+
+      console.log('--- Form Submission Details ---');
+      console.log('Full Name:', document.getElementById('fullName').value);
+      console.log('Mobile Number:', document.getElementById('mobileNumber').value);
+      console.log('Email:', document.getElementById('email').value);
+      console.log('Selected Services (values):', selectedServicesInput.value);
+      console.log('Calculated Total Price:', totalBookingPrice);
+      console.log('Preferred Date:', document.getElementById('preferredDate').value);
+      console.log('Preferred Time:', document.getElementById('preferredTime').value);
+      console.log('Additional Notes:', document.getElementById('notes').value);
+      console.log('--- End of Form Details ---');
+    });
+
+    
+    window.closePopup = function() {
+      thankYouPopup.style.display = 'none'; 
+      bookingForm.reset();     
+      document.querySelectorAll('.service-item.selected').forEach(item => {
+        item.classList.remove('selected');
+      });
+      updateBookingSummary(); 
+    };
+
+  
+    updateBookingSummary();
+  });
+
+
+  </script>
+</body>
+</html>

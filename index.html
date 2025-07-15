@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nail & Glow Bar</title>
+  <link rel="icon" type="images/x-icon" href="Logo001.png">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="logo.png" alt="Nail and Glow Bar Logo" class="logo"/>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-spa"></i> Services</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Buttons -->
+     <div class="header-buttons">
+       <a href="booking.html" class="btn-outline">Book Now</a>
+    </div>
+
+
+
+      <!-- Profile Button -->
+      <a href="register.html" aria-label="Profile">
+        <button class="profile-btn">
+          <i class="fas fa-user"></i>
+        </button>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" onclick="toggleMobileNav()" aria-label="Toggle Navigation">
+        <i class="fas fa-bars" id="toggleIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html"><i class="fas fa-house"></i> Home</a>
+      <a href="services.html"><i class="fas fa-spa"></i> Services</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+    </div>
+  </header>
+
+  <!-- Hero Video Banner -->
+  <div class="hero-video-banner">
+    <video autoplay muted loop playsinline>
+      <source src="BannerVideo.mp4" type="video/mp4"/>
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Hero Content -->
+  <main class="main-hero" id="home">
+    <div class="hero-left">
+      <h1>Indulge in Elegance<br>at Nail and Glow</h1>
+      <p class="tagline">
+        Welcome to Nail & Glow Bar, where beauty meets tranquility. Experience our luxurious nail services in a floral-inspired oasis designed just for you.
+      </p>
+<div class="hero-buttons">
+  <a href="booking.html" class="btn-filled">Book</a>
+  <a href="newsite.html" class="btn-outline">Learn More Info</a>
+</div>
+    </div>
+
+    <div class="hero-right">
+      <img src="pinknails.jpg" alt="Nail and Glow Aesthetic"/>
+    </div>
+  </main>
+
+  <!--  Section -->
+<section class="about-us">
+  <div class="container">
+    <h2 class="about-heading">Nail & Glow Bar</h2>
+    <p class="intro-text">
+      Step into a world of elegance and relaxation at Nail & Glow Bar. Our expert team provides top-tier nail care in a tranquil floral-inspired oasis, perfect for your every beauty need.
+    </p>
+
+    <div class="about-images">
+      <img src="Service1.jpg" alt="Salon Interior" class="clickable-image" />
+      <img src="Service2.jpg" alt="Nail Service" class="clickable-image" />
+      <img src="Service3.jpg" alt="Floral Decor" class="clickable-image" />
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="Expanded view" />
+</div>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Company Info -->
+        <div class="footer-about">
+          <img src="logo.png" alt="Nail and Glow Bar Logo" class="footer-logo"/>
+          <p>Experience luxury nail care in a serene, floral-inspired environment. Book your appointment at Nail & Glow Bar today!</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-spa"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section**** -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://web.facebook.com/NailandGlowBar"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/nailandglowbar?igsh=MTVpaXptbnp3ZmM2Yw=="><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Phone: 0945 985 0793</p>
+          <p>Email: nailandglowbar@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nail & Glow Bar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link para sa External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
